@@ -1,10 +1,26 @@
+body {
+  font-size: 18px;
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+
+#container {
+  display: flex;
+  flex-direction: row;
+}
+
 #left-container {
   display: flex;
   flex-direction: column;
-  background-color: hsl(234, 85%, 45%);
+  align-items: center;
+  background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
   width: 30%;
 }
 
 #right-container {
   display: flex;
+  flex-direction: column;
+}
+
+#title {
+  color: darkgrey;
 }
