@@ -5,6 +5,26 @@ body {
   height: 100vh;
 }
 
+.green-font {
+  color: hsl(166, 100%, 37%)
+}
+
+.red-font {
+  color: hsl(0, 100%, 67%)
+}
+
+.yellow-font {
+  color: hsl(39, 100%, 56%)
+}
+
+.blue-font {
+  color: hsl(234, 85%, 45%)
+}
+
+#reaction {
+
+}
+
 #container {
   display: flex;
   flex-direction: row;
