@@ -22,7 +22,23 @@ body {
 }
 
 #reaction {
+  background: hsl(224, 30%, 27%);
+}
 
+#memory {
+  background: hsl(221, 100%, 96%);
+}
+
+#verbal {
+  background: hsl(241, 100%, 89%);
+}
+
+#visual {
+  background: hsl(241, 100%, 89%);
+}
+
+#continue-btn {
+  background: hsl(224, 30%, 27%);
 }
 
 #container {
