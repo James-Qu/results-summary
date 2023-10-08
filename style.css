@@ -1,3 +1,8 @@
+/* much easier to decide box size since padding and border are included */
+* {
+  box-sizing: border-box; 
+}
+
 body {
   font-size: 18px;
   font-family: 'Hanken Grotesk', sans-serif;
@@ -5,12 +10,33 @@ body {
   height: 100vh;
 }
 
+.right-container-font-size {
+  font-size: 13px
+}
+
+.icon {
+  width: 15px;
+  height: auto;
+}
+
+.right-side-container-column1 {
+  /* display: inline-grid; */
+  /* justify-content: flex-start; */
+  margin-left: 10%;
+
+}
+
+.right-side-container-column2 {
+  /* display: inline-flex; */
+  /* justify-content: flex-end; */
+}
+
 .green-font {
-  color: hsl(166, 100%, 37%)
+  color: hsl(166, 100%, 37%);
 }
 
 .red-font {
-  color: hsl(0, 100%, 67%)
+  color: hsl(0, 100%, 67%);
 }
 
 .yellow-font {
@@ -19,6 +45,12 @@ body {
 
 .blue-font {
   color: hsl(234, 85%, 45%)
+}
+
+.right-container-grid {
+  display: inline-grid;
+  grid-template-columns: 2fr 1fr;
+  justify-content: space-around;
 }
 
 #reaction {
@@ -59,6 +91,7 @@ body {
 #right-container {
   display: flex;
   flex-direction: column;
+  width: 30%;
 }
 
 #title {
