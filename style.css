@@ -1,28 +1,85 @@
 /* much easier to decide box size since padding and border are included */
 * {
-  box-sizing: border-box; 
+  box-sizing: border-box;
+}
+
+/* rem will be relative to this size */
+html {
+  font-size: 18px
 }
 
 body {
-  font-size: 18px;
   font-family: 'Hanken Grotesk', sans-serif;
-  width: 100vw;
-  height: 100vh;
+  width: 70rem;
+  height: 50rem;
+}
+
+#container {
+  display: flex;
+  flex-direction: row;
+  height: 50%;
+  width: 50%;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Left panel */
+
+#left-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  width: 30%;
+}
+
+#title {
+  color: darkgrey;
+}
+
+#score-circle {
+  background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+#rating {
+  font-weight: 700;
+  color: white;
+}
+
+#rating-text {
+  color: darkgrey;
+  font-size: 12px;
+}
+
+/* Left panel ends*/
+
+/* Right panel */
+#right-container {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
 }
 
 .right-container-font-size {
-  font-size: 13px
+  font-size: 0.7rem
 }
 
 .icon {
-  width: 15px;
+  width: 0.5rem;
   height: auto;
 }
 
 .right-side-container-column1 {
   /* display: inline-grid; */
   /* justify-content: flex-start; */
-  margin-left: 10%;
+  margin-left: 1rem;
 
 }
 
@@ -53,6 +110,10 @@ body {
   justify-content: space-around;
 }
 
+.right-container-row {
+  margin: 10px 0 0 10px;
+}
+
 #reaction {
   background: hsl(224, 30%, 27%);
 }
@@ -72,51 +133,4 @@ body {
 #continue-btn {
   background: hsl(224, 30%, 27%);
 }
-
-#container {
-  display: flex;
-  flex-direction: row;
-  height: 50%;
-  width: 50%;
-}
-
-#left-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
-  width: 30%;
-}
-
-#right-container {
-  display: flex;
-  flex-direction: column;
-  width: 30%;
-}
-
-#title {
-  color: darkgrey;
-}
-
-.flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#score-circle {
-  background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
-}
-
-#rating {
-  font-weight: 700;
-  color: white;
-}
-
-#rating-text {
-  color: darkgrey;
-  font-size: 12px;
-}
+/* Right panel ends */
